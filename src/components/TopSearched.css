@@ -1,0 +1,73 @@
+.section { 
+  padding: 36px 0; 
+}
+
+.section h2 { 
+  font-size:2rem; 
+  text-align: center;
+  color:rgb(82, 61, 139);
+}
+.section p{
+  text-align: center;
+  margin: 1% auto;
+  color: gray;
+  max-width: 850px;
+  font-size: large;
+  letter-spacing: 0.05rem;
+}
+.grid { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 16px; 
+}
+
+.cards-destination-container .card-destination { 
+  display: flex; 
+  align-items: center; 
+  justify-content:space-between; 
+  padding: 16px; 
+  border-radius: 14px; 
+  background: linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01));
+  border: 1px solid rgba(0, 0, 0, 0.112);
+}
+
+.card-head h3 { 
+  margin: 0; 
+  font-size: 18px;
+}
+.card-img img{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.muted { 
+  color: var(--muted); 
+}
+
+.icon-button { 
+  border: 1px solid var(--border); 
+  background:rgba(128, 128, 128, 0.174); 
+  width: 26px; 
+  height: 26px; 
+  border-radius: 100px; 
+  cursor: pointer; 
+  border: none;
+}
+
+.icon-button:hover { 
+  background: rgba(255,255,255,.06); 
+}
+
+@media (min-width: 720px) {
+  .grid { 
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (min-width: 1024px) {
+  .grid { 
+    grid-template-columns: repeat(3, 1fr); 
+  }
+}

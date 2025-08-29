@@ -1,0 +1,63 @@
+:root {
+  --bg: #0b1020;
+  --card: #121935;
+  --muted: #a7b0c0;
+  --text: #e9eef7;
+  --primary: #6c8cff;
+  --secondary: #1fd1a5;
+  --border: #22305a;
+}
+
+* { 
+  box-sizing: border-box; 
+}
+
+html, body, #root { 
+  height: 100%; 
+}
+
+body {
+  margin: 0;
+  font-family: ui-sans-serif;
+}
+
+.app main { 
+  padding-top: 80px; 
+}
+
+/* Buttons */
+.btn { 
+  border: 1px solid var(--border); 
+  background: transparent; 
+  color: var(--text);   
+  padding: 10px 16px; 
+  border-radius: 10px; 
+  cursor: pointer; 
+  transition: transform .15s ease, background .2s ease, box-shadow .2s ease; 
+}
+
+.btn:hover { 
+  transform: translateY(-2px); 
+}
+
+.btn-primary { 
+  background: linear-gradient(135deg, var(--primary), #8aa4ff); 
+  border: 1px solid #8aa4ff; 
+  box-shadow: 0 10px 25px rgba(108,140,255,.25); 
+}
+
+
+
+/* Layout helpers */
+.container { 
+  width: min(1100px, 92%); 
+  margin: 0 auto; 
+}
+
+.muted { 
+  color: var(--muted); 
+}
+
+.app main { 
+  padding-top: 80px; 
+}

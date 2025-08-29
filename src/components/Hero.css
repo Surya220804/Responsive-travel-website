@@ -1,0 +1,121 @@
+.hero { 
+  padding: 56px 0 24px; 
+}
+
+.hero-container { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 28px; 
+  align-items: center; 
+  position: relative;
+}
+
+.hero h1 { 
+  font-size: 4rem; 
+  line-height: 1.1; 
+  margin: 0 0 12px; 
+  color:rgba(0, 0, 139, 0.915);
+  font-weight: 500;
+}
+.hero-heading {
+  display: inline-flex;
+  gap: .5rem;
+  align-items: center;
+  font-size: .8rem;
+  width: 12rem;
+  background: #c7d2fe67;
+  padding: .8rem .9rem;
+  border-radius: 100px;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+.hero-title{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 0.6s ease-out forwards;
+}
+@keyframes fadeUp {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+.subtitle { 
+  color: var(--muted); 
+  margin: 0 0 18px; 
+  max-width: 460px; 
+}
+
+.hero-actions { 
+  display: flex; 
+  gap: 12px; 
+  margin-bottom: 18px; 
+}
+.hero-image{
+  position: relative;
+}
+
+.hero-image img { 
+  width: 90%;
+  height: 36vw;
+  object-fit: contain;
+  border-radius: 10px; 
+  box-shadow: 0 20px 40px rgba(0,0,0,.35);
+  clip-path: circle(40% at 50% 50%);
+  
+}
+
+.rating-card { 
+  /* position: absolute; */
+  display: flex;  
+  align-items: center; 
+  gap: 14px; 
+  padding:1rem 2rem; 
+  border:none; 
+  box-shadow: 0 20px 40px rgba(0,0,0,.15);
+  border-radius: 12px; 
+  background: #fff; 
+  z-index: 999;
+  width: max-content;
+  border-radius: 50px;
+  
+}
+.rating-text{
+  display: flex;
+  flex-direction: column;
+}
+.avatars { 
+  display: flex; 
+}
+
+.avatar { 
+  width: 38px; 
+  height: 38px; 
+  border-radius: 50%; 
+  background: center/cover url('https://i.pravatar.cc/100'); 
+  border: 2px solid var(--bg); 
+  margin-left: -4px; 
+}
+
+.avatar:first-child { 
+  margin-left: 0; 
+}
+.hero-primary-btn{
+  background:darkblue;
+  color:#fff;
+  width:max-content;
+  padding: 0.6rem 1rem;
+  border-radius: 100px;
+}
+.hero-secondary-btn{
+  border: none;
+  border-radius: 100px;
+  padding: 0.5rem 0.6rem;
+  width: 7rem;
+  font-weight: bold;
+}
+@media (min-width: 720px) {
+  .hero-container { 
+    grid-template-columns: 1.05fr .95fr; 
+  }
+}

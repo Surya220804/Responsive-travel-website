@@ -1,0 +1,92 @@
+.section { 
+  padding: 36px 0; 
+}
+
+.section h2 { 
+  margin: 0 0 18px; 
+}
+
+.grid.cards { 
+  display: grid; 
+  grid-template-columns: 1fr; 
+  gap: 16px; 
+}
+
+.card { 
+  border-radius:14px; 
+  overflow: hidden; 
+  transition: transform .2s ease, box-shadow .2s ease;
+  position: relative;
+}
+
+.card-media { 
+  position: relative; 
+  overflow: hidden; 
+  filter:  drop-shadow(0 6px 8px rgba(0, 0, 255, 0.3))   
+          drop-shadow(0 6px 12px rgba(255, 165, 0, 0.25)) 
+          drop-shadow(0 6px 16px rgba(128, 0, 128, 0.2)); 
+}
+
+.card-media img { 
+  width: 100%; 
+  height: 180px; 
+  object-fit: cover; 
+  display: block; 
+  cursor: pointer;
+}
+
+.badge { 
+  position: absolute;   
+  top: 10px; 
+  left: 10px; 
+  background: rgba(0,0,0,.25); 
+  padding: 5px 10px; 
+  border-radius: 999px; 
+  font-size: 12px; 
+}
+
+.card-body { 
+  padding: 14px; 
+}
+
+.card-body .muted { 
+  font-size: 15px;
+  text-align: left;
+}
+
+.card-footer { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  margin-top: 8px; 
+  background-color: ghostwhite;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.price { 
+  font-weight: 700; 
+}
+.icon{
+  position: absolute;
+  top: 1%;
+  right: 2%;
+  cursor: pointer;
+}
+.iconic-btn{
+   background:rgba(0, 0, 139, 0.929);
+  color:#fff;
+  width:max-content;
+  padding: 0.6rem 1rem;
+  border-radius: 100px;
+  box-shadow: rgba(0, 0, 255, 0.1);
+}
+@media (min-width: 1024px) {
+  .grid.cards { 
+    grid-template-columns: repeat(3, 1fr); 
+  }
+
+  .card-media img { 
+    height: 220px; 
+  }
+}

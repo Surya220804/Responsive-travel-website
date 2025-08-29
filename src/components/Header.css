@@ -1,0 +1,39 @@
+.header{ 
+  position: sticky; 
+  top: 0; 
+  z-index: 20; 
+  backdrop-filter: blur(10px); 
+}
+
+.header-container { 
+  display: flex; 
+  align-items: center; 
+  justify-content: space-between; 
+  padding: 14px 0; 
+}
+
+.logo { 
+  font-weight: 800; 
+  letter-spacing: 0.5px; 
+}
+
+.nav { 
+  display: none; 
+  gap: 22px; 
+}
+
+.nav a { 
+  color: var(--bg); 
+  text-decoration: none; 
+  font-weight: 500; 
+}
+
+.nav a:hover { 
+  color: var(--primary); 
+}
+
+@media (min-width: 720px) {
+  .nav { 
+    display: flex; 
+  }
+}
