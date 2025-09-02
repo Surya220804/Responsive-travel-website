@@ -25,7 +25,7 @@ body {
   padding-top: 80px; 
 }
 
-/* Buttons */
+
 .btn { 
   border: 1px solid var(--border); 
   background: transparent; 
@@ -33,9 +33,7 @@ body {
   padding: 10px 16px; 
   border-radius: 10px; 
   cursor: pointer; 
-  transition: transform .15s ease, background .2s ease, box-shadow .2s ease; 
 }
-
 .btn:hover { 
   transform: translateY(-2px); 
 }
@@ -48,7 +46,6 @@ body {
 
 
 
-/* Layout helpers */
 .container { 
   width: min(1100px, 92%); 
   margin: 0 auto; 

@@ -15,7 +15,6 @@
   align-items: center; 
   justify-content: center; 
   padding: 10px; 
-  /* border: 1px dashed var(--border);  */
   border-radius: 12px; 
   background: rgba(255,255,255,.02); 
 }
